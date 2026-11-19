@@ -56,7 +56,7 @@ def main() -> None:
     ecg_noisy, ecg_clean = load_ecg_signals()
 
     # Change the following ecg_clean to ecg_noisy to plot the noisy signal
-    signal = ecg_clean
+    signal = ecg_noisy
     
     plot_signals([signal])
     freq, fft_values = fast_fourier_transform(signal)
